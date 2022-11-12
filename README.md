@@ -1,5 +1,7 @@
 # Sistema Solar
 
+![sistemaSOlar](https://user-images.githubusercontent.com/47281465/201498849-5a663405-6089-4bfe-afa8-0fa97a446d9d.jpg)
+
 Rafael Correia de Lima - 21004515 
 
 Renan Gonçalves Miranda - 11069212
