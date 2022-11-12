@@ -13,3 +13,5 @@ Até 2006, o Sistema Solar era composto por 9 planetas, porém nesse ano, Plutã
 
 ## Os Planetas do Sistema Solar
 
+### Mercúrio
+* Planeta mais próximo do Sol (com 57,9 milhoes de quilômetros de proximidade).
