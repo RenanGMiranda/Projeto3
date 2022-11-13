@@ -15,9 +15,9 @@ Até 2006, o Sistema Solar era composto por 9 planetas, porém nesse ano, Plutã
 
 ### Mercúrio
 
-div align="center"
-img src="https://user-images.githubusercontent.com/47281465/201498849-5a663405-6089-4bfe-afa8-0fa97a446d9d.jpg" width="300px" /
-/div
+<div align="center">
+<img src="https://user-images.githubusercontent.com/47281465/201498849-5a663405-6089-4bfe-afa8-0fa97a446d9d.jpg" width="300px" />
+</div>
 
 * Planeta mais próximo do Sol (com 57,9 milhoes de quilômetros de proximidade).
 * Possuí um diâmetro de 4878 Km (o menor dos planetas do Sistema Solar).
