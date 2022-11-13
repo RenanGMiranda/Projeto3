@@ -14,4 +14,14 @@ Até 2006, o Sistema Solar era composto por 9 planetas, porém nesse ano, Plutã
 ## Os Planetas do Sistema Solar
 
 ### Mercúrio
+
+div align="center"
+img src="https://user-images.githubusercontent.com/47281465/201498849-5a663405-6089-4bfe-afa8-0fa97a446d9d.jpg" width="300px" /
+/div
+
 * Planeta mais próximo do Sol (com 57,9 milhoes de quilômetros de proximidade).
+* Possuí um diâmetro de 4878 Km (o menor dos planetas do Sistema Solar).
+* Seu movimento de translação é executado ao uma velocidade de 47,87 km/s.
+* O dia em Mercúrio corresponde a 58,6 dias terrestre e o ano 88 dias terrestres.
+* Sua atmosfera é composta basicamente por átomos de argônio, neônio e hélio.
+* A temperatura nesse planeta, varia entre 430ºC durante o dia e -170ºC durante a noite.
