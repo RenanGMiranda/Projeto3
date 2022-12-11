@@ -4,7 +4,9 @@ Rafael Correia de Lima - 21004515
 
 Renan Gonçalves Miranda - 11069212
 
-## Descrição
+## Funcionalidade
+
+![sistemaSolar](https://user-images.githubusercontent.com/47281465/206933302-8e1e4739-8d20-4150-ab3f-cae58b131a66.png)
 
 
 ## Implementação
