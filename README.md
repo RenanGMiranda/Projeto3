@@ -77,7 +77,9 @@ Em `Window::onCreate()` temos a criação dos planetas. São passados para cada 
 * raio orbital;
 * referencia de translação.
 
-Em `Window::onPaintUI()` é criado um slider para dar a possibilidade ao usuário de aumentar as velocidades de translação dos planetas, levando em consideração a velocidade inicial multiplicada pelo valor do slider.
+Em `Window::onPaintUI()`:
+* São criados sliders para dar a possibilidade ao usuário de aumentar ou diminuir as velocidades de translação dos planetas e o controle de luminosidade dos sistema.
+* É criado um widget (radio button) contendo os planetas para selecção
 
 Em `Window::onPaint()` temos a renderização dos planetas, sol e lua. 
 
