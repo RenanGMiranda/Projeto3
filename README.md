@@ -16,7 +16,7 @@ Na figura abaixo temos a representação do sistema solar. Nessa firura estão n
 
 **2. Controles de iluminação:** Através dos sliders o usuário conseguirá aumentar ou diminuir os fatores das componentes de reflexão, que são ambiente (Ia), difusa (Id) e especular (Is). Além disso pode também aumentar ou diminuir o expoente de brilho especular (Shineness).
 
-**3. O Sistema Solar:** Nele o usuário pode selecionar o planeta ou o sol, após a seleção será apresentado ao usuário informações do astro selecionado (presente no item 4).
+**3. O Sistema Solar:** Nele o usuário pode selecionar o planeta ou o sol, após a seleção será apresentado ao usuário informações do astro selecionado e o planeta entrará em foco pela câmera, caso a translação esteja ligada, a câmera acompanhará o planeta selecionado por todo o seu trajeto (presente no item 4).
 
 **4. Informações:** Após o usuário selecionar o astro de sua escolha, será apresentada uma caixa com informações relevantes do astro, como diâmetro, velocidade de translação, temperatura, composição, entre outros.
 
@@ -68,7 +68,8 @@ private:
 
 ```
 
-Em `Window::onCreate()` temos a criação dos planetas. São passados para cada planeta, sol e lua os seguintes parametros:
+##### `Window::onCreate()` 
+Temos a criação dos planetas. São passados para cada planeta, sol e lua os seguintes parametros:
 * nome;
 * escala;
 * cor;
@@ -77,15 +78,18 @@ Em `Window::onCreate()` temos a criação dos planetas. São passados para cada 
 * raio orbital;
 * referencia de translação.
 
-Em `Window::onPaintUI()`:
+##### `Window::onPaintUI()`
 * São criados sliders para dar a possibilidade ao usuário de aumentar ou diminuir as velocidades de translação dos planetas e o controle de luminosidade dos sistema.
 * É criado um widget (radio button) contendo os planetas para selecção
 
-Em `Window::onPaint()` temos a renderização dos planetas, sol e lua. 
+##### `Window::onPaint()`
+Temos a renderização dos planetas, sol e lua. 
 
-Em `Window::onEvent` são convertidos eventos do mouse ou teclado para ações no sistema, como as tecladas direcionais do teclado exercem uma ação no sistema, ou ao pressionar o botão do mouse acontece uma ação do sistema solar.
+##### `Window::onEvent` 
+São convertidos eventos do mouse ou teclado para ações no sistema, como as tecladas direcionais do teclado exercem uma ação no sistema, ou ao pressionar o botão do mouse acontece uma ação do sistema solar.
 
-Em `Window::onResize` e `Window::onDestroy()` não temos alteração das versões apresentadas no curso.
+##### `Window::onResize` e `Window::onDestroy()` 
+Não temos alteração das versões apresentadas no curso.
 
 ``Body sun, mercury, venus, earth, mars, jupiter, saturn, neptune, uranus, moon;``: representação dos corpos celestes a serem simulados na cena; 
 
