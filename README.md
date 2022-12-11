@@ -6,6 +6,10 @@ Renan Gonçalves Miranda - 11069212
 
 ## Funcionalidade
 
+Localizado na Via Láctea, o Sistema Solar é formado por 8 planetas (Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano, Netuno) que orbitam uma estrela, o Sol, daí seu nome. Além desses 8 planetas também temos diversos corpos celestes, como satélites naturais, asteroides, cometas e meteoroides.
+
+Na figura abaixo temos a representação do sistema solar. Nessa firura estão numeradas as principais funcionalidades que o usuário poderá manipular.
+
 ![sistemaSolar](https://user-images.githubusercontent.com/47281465/206933302-8e1e4739-8d20-4150-ab3f-cae58b131a66.png)
 
 
