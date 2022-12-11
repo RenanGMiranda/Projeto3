@@ -12,7 +12,13 @@ Na figura abaixo temos a representação do sistema solar. Nessa firura estão n
 
 ![sistemaSolar](https://user-images.githubusercontent.com/47281465/206933302-8e1e4739-8d20-4150-ab3f-cae58b131a66.png)
 
-1. sdsdsdsds
+1. Controles de Movimento: Através dos sliders o usuário conseguirá aumentar ou diminuir as velocidades de rotação e translação dos planetas (mudação de velocidade do sistema, ou seja, ao alterar o mutiplicar da velocidade, será alterado para todos os planetas). Como padrão, essas velocidades estão setadas para iniciar zeradas.
+
+2. Controles de iluminação: Através dos sliders o usuário conseguirá aumentar ou diminuir os fatores das componentes de reflexão, que são ambiente (Ia), difusa (Id) e especular (Is). Além disso pode também aumentar ou diminuir o expoente de brilho especular (Shineness).
+
+3. O Sistema Solar: Nele o usuário pode selecionar o planeta ou o sol, após a seleção será apresentado ao usuário informações do astro selecionado (presente no item 4).
+
+4. Informações: Após o usuário selecionar o astro de sua escolha, será apresentada uma caixa com informações relevantes do astro, como diâmetro, velocidade de translação, temperatura, composição, entre outros.
 
 ## Implementação
 
