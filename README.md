@@ -142,13 +142,16 @@ mGui::SetNextWindowPos(ImVec2(m_viewportSize.x -505, 5));
     .
     .
     .
+    
     case -1:{
       ImGui::Text("Olá, seja bem vindo ao Modelo Sistema Solar!");
       ImGui::Text("Selecione um planeta e veja suas informações");
       ImGui::Text("Divirta-se navegando e explorando o no sistema.");
       break;
     }
+```
 
+* Para a focalização da câmera no planeta selecionado no radio button
 
 ##### `Window::onPaint()`
 Temos a renderização dos planetas, sol e lua. 
