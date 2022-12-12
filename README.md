@@ -79,7 +79,61 @@ Temos a criação dos planetas. São passados para cada planeta, sol e lua os se
 * referencia de translação.
 
 ##### `Window::onPaintUI()`
-* São criados sliders para dar a possibilidade ao usuário de aumentar ou diminuir as velocidades de translação dos planetas e o controle de luminosidade dos sistema.
+* São criados sliders (conforme apresentados em sala de aula) para dar a possibilidade ao usuário de aumentar ou diminuir as velocidades de translação dos planetas e o controle de luminosidade dos sistema.
+
+
+```C++
+    ImGui::SetNextWindowBgAlpha(0.7f);
+    ImGui::Begin("Controles de Movimento", nullptr,ImGuiWindowFlags_NoResize);
+
+    {
+      ImGui::PushItemWidth(-1);
+      ImGui::PushID(1);
+      ImGui::SliderFloat("", &m_rotation_speed, 0.0f, 10.0f,"%.1fx Vel. Rotação");
+      ImGui::PopID();
+      
+      ImGui::PushID(2);
+      ImGui::SliderFloat("", &m_translation_speed, 0.0f, 10.0f,"%.1fx Vel. Translação");
+      ImGui::PopID();
+      ImGui::PopItemWidth();
+      
+    }
+
+    ImGui::End();
+
+    ImGui::SetNextWindowPos(ImVec2(5, 200));
+    ImGui::SetNextWindowSize(ImVec2(300, -1));
+    ImGui::SetNextWindowBgAlpha(0.7f);
+  
+    ImGui::Begin("Controles de Iluminação", nullptr,ImGuiWindowFlags_NoResize);
+
+    {
+      ImGui::PushItemWidth(-1);
+      ImGui::PushID(3);
+      ImGui::SliderFloat("", &m_Ia, 0.0f, 2.0f,"Ia: %.1f");
+      light.m_Ia = glm::vec4(m_Ia);
+      ImGui::PopID();
+
+      ImGui::PushID(4);
+      ImGui::SliderFloat("", &m_Id, 0.0f, 2.0f,"Id: %.1f");
+      light.m_Id = glm::vec4(m_Id);
+      ImGui::PopID();
+
+      ImGui::PushID(5);
+      ImGui::SliderFloat("", &m_Is, 0.0f, 2.0f,"Is: %.1f");
+      light.m_Is = glm::vec4(m_Is);
+      ImGui::PopID();
+      
+      ImGui::PushID(6);
+      ImGui::SliderFloat("", &m_shininess, 0.0f, 100.0f,"Shininess: %.1f");
+      ImGui::PopID();
+
+    }
+
+    ImGui::End();
+  }
+```
+
 * É criado um widget (radio button) contendo os planetas para seleção dos astros:
 
 ```C++
