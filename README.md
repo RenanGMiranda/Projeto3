@@ -20,6 +20,7 @@ Na figura abaixo temos a representação do sistema solar. Nessa firura estão n
 
 **4. Informações:** Após o usuário selecionar o astro de sua escolha, será apresentada uma caixa com informações relevantes do astro, como diâmetro, velocidade de translação, temperatura, composição, entre outros.
 
+Abaixo temos um exemplo de foco no planeta J
 ![Captura de tela de 2022-12-11 21-58-09](https://user-images.githubusercontent.com/47281465/206940352-e31109c9-d9da-4d88-adc9-958b9bcce505.png)
 
 Nesta representação o usuário poderia aproximar-se ou afastar-se dos astros utilizando o scroll do mouse, ao clicar com o botão esquerdo na tela, o usuário pode ser movimentar para cima, para baixo, para a esquerda ou para a direita através das teclas de movimentação do teclado ou as teclas w,s,a,d.
