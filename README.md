@@ -80,7 +80,75 @@ Temos a criação dos planetas. São passados para cada planeta, sol e lua os se
 
 ##### `Window::onPaintUI()`
 * São criados sliders para dar a possibilidade ao usuário de aumentar ou diminuir as velocidades de translação dos planetas e o controle de luminosidade dos sistema.
-* É criado um widget (radio button) contendo os planetas para selecção
+* É criado um widget (radio button) contendo os planetas para seleção dos astros:
+
+```C++
+  ImGui::SetNextWindowPos(ImVec2(5, 400));
+  ImGui::SetNextWindowSize(ImVec2(200, -1));
+  ImGui::SetNextWindowBgAlpha(0.7f);
+
+  ImGui::Begin("O Sistema Solar", nullptr,ImGuiWindowFlags_NoResize);
+    
+  {
+    ImGui::RadioButton("Câmera Livre", &radio_selected, -1);
+    ImGui::RadioButton("Sol", &radio_selected, 0);
+    ImGui::RadioButton("Mercúrio", &radio_selected, 1);
+    ImGui::RadioButton("Vênus", &radio_selected, 2);
+    ImGui::RadioButton("Terra", &radio_selected, 3);
+    ImGui::RadioButton("Marte", &radio_selected, 4);
+    ImGui::RadioButton("Júpiter", &radio_selected, 5); 
+    ImGui::RadioButton("Saturno", &radio_selected, 6);
+    ImGui::RadioButton("Urano", &radio_selected, 7);
+    ImGui::RadioButton("Neturno", &radio_selected, 8);
+  }
+
+  ImGui::End();
+```
+* Através do valor que é setado no radio button é mostrado a informação do astro selecionado. Aqui utilizamos `ImGui::Text`para passar na tela tais informações:
+
+
+```C++
+mGui::SetNextWindowPos(ImVec2(m_viewportSize.x -505, 5));
+  ImGui::SetNextWindowSize(ImVec2(500, -1));
+    ImGui::SetNextWindowBgAlpha(0.7f);
+
+  ImGui::Begin("Informações", nullptr,ImGuiWindowFlags_NoResize);
+  switch (radio_selected) 
+  {
+    case 0:{
+      ImGui::Text("Sol");
+      ImGui::Text("********************************************");
+      ImGui::Text("Diâmetro:           1.391.016 km");
+      ImGui::Text("Temperature:        5.500°C");
+      ImGui::Text("Composição:");
+      ImGui::Text("   * Gases hélio e hidrogênio");
+      break;
+    }
+    case 1:{
+      ImGui::Text("Mercúrio");
+      ImGui::Text("********************************************");
+      ImGui::Text("Diâmetro:           4.879,4 Km");
+      ImGui::Text("Dist. Sol:          57,9 milhões Km");
+      ImGui::Text("Vel. Translação:    47,87 km/s");
+      ImGui::Text("1 Dia:              58,6 dias terrestre");
+      ImGui::Text("1 Ano:              88 dias terrestre");
+      ImGui::Text("Temp. Dia:          430°C");
+      ImGui::Text("Temp. Noite:        -170°C");
+      ImGui::Text("Composição:");
+      ImGui::Text("   * Atomos de argônio, neônio e hélio");
+      break;
+    }
+    
+    .
+    .
+    .
+    case -1:{
+      ImGui::Text("Olá, seja bem vindo ao Modelo Sistema Solar!");
+      ImGui::Text("Selecione um planeta e veja suas informações");
+      ImGui::Text("Divirta-se navegando e explorando o no sistema.");
+      break;
+    }
+
 
 ##### `Window::onPaint()`
 Temos a renderização dos planetas, sol e lua. 
