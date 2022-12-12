@@ -20,6 +20,8 @@ Na figura abaixo temos a representação do sistema solar. Nessa firura estão n
 
 **4. Informações:** Após o usuário selecionar o astro de sua escolha, será apresentada uma caixa com informações relevantes do astro, como diâmetro, velocidade de translação, temperatura, composição, entre outros.
 
+![Captura de tela de 2022-12-11 21-58-09](https://user-images.githubusercontent.com/47281465/206940352-e31109c9-d9da-4d88-adc9-958b9bcce505.png)
+
 Nesta representação o usuário poderia aproximar-se ou afastar-se dos astros utilizando o scroll do mouse, ao clicar com o botão esquerdo na tela, o usuário pode ser movimentar para cima, para baixo, para a esquerda ou para a direita através das teclas de movimentação do teclado ou as teclas w,s,a,d.
 
 
@@ -413,9 +415,3 @@ Além de aplicação dos conteúdos de iluminação e textura que são esperados
 * Realizar a movimentação dos planetas de acordo com os ângulos reais de inclinação, e não apenas no plano XZ;
 * Aprimorar as proporções de tamanho, distância, e velocidade de movimentação entre os planetas, prezando não pela proximidade com a realizade, mas um melhor resultado visual;
 * Adicionar mais opções de interação na interface gráfica para controle de aspectos da cena.
-
-## Referências
-* https://planetario.ufsc.br/o-sistema-solar/
-* https://www.tecmundo.com.br/ciencia/243351-velocidade-planetas-sistema-solar-veja-animacao.htm
-* https://www.infoescola.com/astronomia/planetas-do-sistema-solar/
-* https://mundoeducacao.uol.com.br/geografia/sistema-solar.htm
