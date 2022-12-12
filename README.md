@@ -134,7 +134,7 @@ Temos a criação dos planetas. São passados para cada planeta, sol e lua os se
   }
 ```
 
-* É criado um widget (radio button) contendo os planetas para seleção dos astros:
+* É criado um widget (radio button) contendo os planetas para seleção dos astros. Essa criação se tá através do `ImGui::RadioButton`, onde passamos o que estará escrito no radio button, a variaável que recebera o resultado e seu "identificador":
 
 ```C++
   ImGui::SetNextWindowPos(ImVec2(5, 400));
