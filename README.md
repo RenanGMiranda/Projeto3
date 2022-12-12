@@ -45,6 +45,14 @@ Semelhante aos main.cpp dos projetos apresentados em sala de aula, somente sofre
 Nessa classe definimos o funcionamento geral da cena e da UI.
 
 ```C++
+#ifndef WINDOW_HPP_
+#define WINDOW_HPP_
+
+#include "abcgOpenGL.hpp"
+#include "body.hpp"
+#include "camera.hpp"
+#include "skydome.hpp"
+
 class Window : public abcg::OpenGLWindow {
 protected:
   void onEvent(SDL_Event const &event) override;
@@ -62,14 +70,40 @@ private:
 
   Body sun, mercury, venus, earth, mars, jupiter, saturn, neptune, uranus, moon;
 
+  Skydome skydome;
+
   float m_pedestalSpeed{};
   float m_truckSpeed{};
-  float speed{1.0f};
   
-  GLuint m_program{};
+  float m_rotation_speed{0.0f};
+  float m_translation_speed{0.0f};
+
+  struct Light
+  {
+    glm::vec4 m_Ia{1.0f};
+    glm::vec4 m_Id{1.0f};
+    glm::vec4 m_Is{1.0f};
+  };
+
+  Light light;
+
+  float m_Ia{1.0f};
+  float m_Id{1.0f};
+  float m_Is{1.0f};
+  float m_shininess{50.0f};
+
+  int radio_selected{-1};
+  
+  ImFont *m_font{};
+
+  GLuint program_body{}, program_path{}, program_skydome{};
 };
 
+#endif
+
+
 ```
+
 
 ##### `Window::onCreate()` 
 Temos a criação dos planetas. São passados para cada planeta, sol e lua os seguintes parametros:
